@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+      font-family: "Open Sans", sans-serif;
+     
+}
+body {
+    background-color:#F5F4F0;
+}
+
+#pages {
+    box-sizing: border-box;
+    width: 800px;
+    padding: 24px 24px 0px 24px;
+    background-color: #ebe8e8;
+    border-radius: 24px;
+    margin: 48px auto 48px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.222) ;
+    
+}
+#mark {
+    color:#E1624F ;
+    margin-bottom:px;
+    font-size: 11PX;
+
+}
+#list {
+    color: #0C51A7;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+#casais{ 
+    color:#591B98;
+}
+
+#familias {
+    color:#E5245E ;
+}
+#orçamento {
+    color:#E95E10 ;
+}
+
+main {
+    padding: 24px;
+}
+section {
+    margin-top: 24px;
+}
+#imagens {
+   height: 220px;
+    
+}
+#img-principal {
+    width: 700px;
+    height: 350px;
+}
+h1 {
+    margin-bottom: 30px;
+}
+#sub {
+    margin-top: 15px;
+    text-align:center;
+    font-style: italic;
+    font-size: 11px;
+   color: rgb(65, 64, 64);
+}
+#hori {
+    background-color: #bdb9b9a2;
+    height:1px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+}
+#hor {
+     background-color: #bdb9b9a2;
+      height:1px;
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+#subtitulo {
+    padding: 2px;
+}
+#cabe {
+    color: rgb(65, 64, 64);
+    font-size:11px;
+    padding-bottom: 30px;
+}
+h3 {
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+#conteudo {
+      color: rgb(65, 64, 64);
+    font-size:11px;
+    margin-bottom: 10px;
+}
+#des {
+    padding-top: 5px;
+   font-size: 12px;
+}
+ul {
+  padding-left: 20px; /* Ajuste esse valor até alinhar com o seu título/parágrafo */
+  list-style-position: outside; /* Valor padrão */
+}
+h2 {
+    margin-bottom: 5px;
+
+}
+#final {
+    color: rgb(65, 64, 64);
+    font-size:11px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.rodape {
+   text-align: center;
+   font-size:11px ;
+  margin-top: 90px;
+    color: rgb(65, 64, 64);
+    font-family: 'Playfair Display', serif;
+}
+#color {
+    font-size:11px;
+}
+

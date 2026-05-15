@@ -31,6 +31,16 @@
     padding: 24px;
 
 
+    /* 
+ * SELECIONADOR PAI (:has)
+ * Aplica o padding de 12px no elemento atual (&) APENAS SE 
+ * ele possuir um elemento filho com a classe '.text-lg'.
+ */
+    &:has(.text-lg) {
+      padding: 12px;
+    }
+
+
     h2  {
       margin-top: 8px;
     }

@@ -1,0 +1,293 @@
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS E VARIÁVEIS
+   ========================================================================== */
+:root {
+    --bg-color: #0d0e12;
+    --card-bg: #16181f;
+    --text-primary: #ffffff;
+    --text-secondary: #9499a6;
+    --accent-color: #e2437e; /* Rosa/Vermelho de destaque */
+    --font-family: 'Inter', sans-serif; /* Certifique-se de importar ou usar uma similar */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-family);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Títulos Globais */
+.section-subtitle {
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 48px;
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   HEADER / HERO
+   ========================================================================== */
+.hero {
+    padding: 80px 0 60px 0;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar-container {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-color);
+    object-fit: cover;
+}
+
+.hero .subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+
+.hero .highlight {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.hero .description {
+    max-width: 700px;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    margin-bottom: 40px;
+}
+
+/* Badges */
+.tech-badges {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.badge {
+    background-color: #1e222b;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+    border: 1px solid #2d323f;
+}
+
+.scroll-arrow {
+    color: var(--text-secondary);
+    animation: bounce 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+/* ==========================================================================
+   SEÇÃO PROJETOS (GRID)
+   ========================================================================== */
+.projects {
+    padding: 60px 0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.project-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #232631;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Cores das Bordas Superiores dos Cards conforme o Figma */
+.card-red { border-top: 3px solid #ff5555; }
+.card-blue { border-top: 3px solid #55aaff; }
+.card-yellow { border-top: 3px solid #ffaa00; }
+.card-green-yellow { border-top: 3px solid #aaff00; }
+.card-green { border-top: 3px solid #55ff7f; }
+.card-cyan { border-top: 3px solid #00ffff; }
+
+
+/* ==========================================================================
+   SEÇÃO SERVIÇOS
+   ========================================================================== */
+.services {
+    padding: 60px 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.service-card {
+    background-color: var(--card-bg);
+    padding: 30px 24px;
+    border-radius: 12px;
+    border: 1px solid #232631;
+}
+
+.service-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icon-purple { background-color: rgba(138, 43, 226, 0.15); color: #8a2be2; }
+.icon-yellow { background-color: rgba(255, 170, 0, 0.15); color: #ffaa00; }
+.icon-green { background-color: rgba(85, 255, 127, 0.15); color: #55ff7f; }
+
+.service-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+.service-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   CONTATO / FOOTER
+   ========================================================================== */
+.contact {
+    padding: 80px 0 100px 0;
+    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-text {
+    color: var(--text-secondary);
+    margin-bottom: 32px;
+}
+
+.social-links {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-btn {
+    background-color: var(--card-bg);
+    border: 1px solid #232631;
+    color: var(--text-primary);
+    padding: 16px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.social-btn:hover {
+    background-color: #1e212b;
+}
+
+.social-btn span {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.social-btn .arrow {
+    color: var(--text-secondary);
+}
+
+/* Linhas decorativas (efeito visual das linhas coloridas nas pontas da imagem) */
+.top-gradient-bar, .bottom-gradient-bar {
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(90deg, #ff5555, #55aaff, #aaff00, #ffaa00);
+    opacity: 0.7;
+}
